@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineVerse Pro - Premium Streaming Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="/" class="logo">CineVerse<sup>PRO</sup></a>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#movies">Movies</a>
+                <a href="#series">Series</a>
+                <a href="#genres">Genres</a>
+                <a href="#new">New Releases</a>
+            </div>
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" placeholder="Search 25,000+ titles...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;">
+            <iframe src="https://geo.dailymotion.com/player.html?video=x96tz90"
+              style="width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden; border:none;"
+              allowfullscreen
+              title="Dailymotion Video Player"
+              allow="web-share">
+            </iframe>
+          </div>
+        </section>
+
+        <section class="content-carousel">
+            <h2 class="carousel-title">Trending Now <span class="see-all">See All</span></h2>
+            <a href="m1.html">
+            <div class="main-movie">
+                <div class="movie-grid">
+                    <div class="movie-card">
+                        <div class="poster-container">
+                            <img src="https://s1.dmcdn.net/v/XFbNC1d7CnE9z0ElZ/x120" alt="">
+                        </div>
+    
+                        <div class="movie-info">
+                            <h3>រឿង ព្រះតេជគុណ​ ផ្លិតរន្ទះ -Thai movie speak Khmer Full HD Movie</h3>
+                            <p class="genre">Action, រឿងថៃនិយាយខ្មែរ</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            </a>
+            
+  
+        </section>
+
+
+
+        <section class="content-carousel">
+            <h2 class="carousel-title">Award Winners <span class="see-all">See All</span></h2>
+            
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>Explore</h4>
+                <a href="#">4K Ultra HD</a>
+                <a href="#">VR Experiences</a>
+                <a href="#">Director's Cut</a>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <a href="#">Terms of Service</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Content Policy</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="platform-badges">
+            </div>
+        </div>
+    </footer>
+
+    <style>
+    /* Professional Styling */
+    :root {
+        --primary: #00AAFF;
+        --dark-bg: #0a0a0a;
+        --surface: #1a1a1a;
+        --text-primary: #ffffff;
+        --text-secondary: #cccccc;
+    }
+
+    * {
+        text-decoration: none;
+    }
+
+    a {
+        color: white;
+    }
+
+    body {
+        background: var(--dark-bg);
+        color: var(--text-primary);
+        font-family: 'Helvetica Neue', system-ui, sans-serif;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, transparent 100%);
+        z-index: 1000;
+        padding: 1rem 0;
+        transition: all 0.3s ease;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: -1px;
+        text-decoration: none;
+        color: var(--primary);
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2rem;
+        margin-left: 3rem;
+    }
+
+    .main-movie {
+        gap: 20px;
+        display: flex;
+    }
+
+    .nav-links a {
+        color: var(--text-primary);
+        text-decoration: none;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a.active {
+        color: var(--primary);
+        border-bottom: 2px solid var(--primary);
+    }
+
+    .search-container {
+        position: relative;
+        margin-right: 2rem;
+    }
+
+    .search-container input {
+        background: rgba(255,255,255,0.1);
+        border: none;
+        padding: 0.8rem 2.5rem 0.8rem 1rem;
+        border-radius: 25px;
+        color: var(--text-primary);
+        width: 300px;
+        transition: all 0.3s ease;
+    }
+
+    .search-container input:focus {
+        outline: none;
+        background: rgba(255,255,255,0.2);
+        width: 400px;
+    }
+
+    .search-container i {
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: var(--text-primary);
+    }
+
+    .content-wrapper {
+        margin-top: 100px;
+        padding: 2rem;
+    }
+
+    .movie-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .movie-card {
+        background: var(--surface);
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+    .movie-info {
+        padding: 20px;
+    }
+
+    .movie-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .poster-container {
+        position: relative;
+        padding-bottom: 150%;
+        background: #000;
+    }
+
+    .poster-container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hover-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.7);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .movie-card:hover .hover-overlay {
+        opacity: 1;
+    }
+
+    .play-btn {
+        background: var(--primary);
+        border: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        cursor: pointer;
+    }
+
+    .meta-info {
+        display: flex;
+        gap: 1rem;
+        color: var(--text-primary);
+    }
+
+    .main-footer {
+        background: #000;
+        padding: 4rem 2rem;
+        margin-top: 4rem;
+    }
+
+    .footer-columns {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4rem;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+        }
+        
+        .search-container input {
+            width: 200px;
+        }
+        
+        .main-movie {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    </style>
+
+    <script>
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('.main-nav');
+        if (window.scrollY > 100) {
+            nav.style.background = 'rgba(0,0,0,0.95)';
+        } else {
+            nav.style.background = 'linear-gradient(180deg, rgba(0,0,0,0.9) 0%, transparent 100%)';
+        }
+    });
+
+    const searchInput = document.querySelector('.search-container input');
+    searchInput.addEventListener('focus', () => {
+        searchInput.parentElement.classList.add('focused');
+    });
+    
+    searchInput.addEventListener('blur', () => {
+        searchInput.parentElement.classList.remove('focused');
+    });
+    </script>
+</body>
+</html>
